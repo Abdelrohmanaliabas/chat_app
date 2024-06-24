@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class RegisterPage extends StatefulWidget {
-  RegisterPage({Key? key}) : super(key: key);
+  const RegisterPage({Key? key}) : super(key: key);
 
   static String id = 'RegisterPage';
 
@@ -37,14 +37,14 @@ class _RegisterPageState extends State<RegisterPage> {
             key: formKey,
             child: ListView(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 75,
                 ),
                 Image.asset(
                   'assets/images/scholar.png',
                   height: 100,
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
@@ -57,10 +57,10 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 75,
                 ),
-                Row(
+                const Row(
                   children: [
                     Text(
                       'REGISTER',
@@ -80,7 +80,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   },
                   hintText: 'Email',
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 CustomFormTextField(
@@ -89,7 +89,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   },
                   hintText: 'Password',
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 CustomButon(
@@ -117,13 +117,13 @@ class _RegisterPageState extends State<RegisterPage> {
                   },
                   text: 'REGISTER',
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       'already have an account?',
                       style: TextStyle(
                         color: Colors.white,
@@ -133,7 +133,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       onTap: () {
                         Navigator.pop(context);
                       },
-                      child: Text(
+                      child: const Text(
                         '  Login',
                         style: TextStyle(
                           color: Color(0xffC7EDE6),

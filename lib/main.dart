@@ -13,12 +13,12 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   runApp(
-    ChatApp(),
+    const ChatApp(),
   );
 }
 
 class ChatApp extends StatelessWidget {
-  ChatApp({super.key});
+  const ChatApp({super.key});
 
   @override
   Widget build(BuildContext context) {
